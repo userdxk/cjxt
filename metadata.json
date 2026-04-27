@@ -1,0 +1,12 @@
+{
+  "name": "Chicks ID - Precision AI Sorting",
+  "description": "An advanced AI-powered poultry gender identification and sorting management dashboard.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Real-time AI Monitoring",
+    "Biological Yield Analytics",
+    "Batch Traceability"
+  ]
+}

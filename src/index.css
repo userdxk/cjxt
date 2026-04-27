@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-surface: #f7faf6;
+  --color-surface-dim: #d8dbd7;
+  --color-surface-bright: #f7faf6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f0;
+  --color-surface-container: #ecefeb;
+  --color-surface-container-high: #e6e9e5;
+  --color-surface-container-highest: #e0e3df;
+  
+  --color-primary-green: #004532;
+  --color-primary-fixed: #a6f2d1;
+  --color-secondary-blue: #3755c3;
+  --color-female-pink: #ffdae2;
+  --color-male-blue: #dae2fd;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-slate-900 antialiased font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-slate-200/60;
+}
+
+.scanning-reticle {
+  background: linear-gradient(to right, #004532 2px, transparent 2px) 0 0,
+              linear-gradient(to right, #004532 2px, transparent 2px) 0 100%,
+              linear-gradient(to left, #004532 2px, transparent 2px) 100% 0,
+              linear-gradient(to left, #004532 2px, transparent 2px) 100% 100%,
+              linear-gradient(to bottom, #004532 2px, transparent 2px) 0 0,
+              linear-gradient(to bottom, #004532 2px, transparent 2px) 100% 0,
+              linear-gradient(to top, #004532 2px, transparent 2px) 0 100%,
+              linear-gradient(to top, #004532 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+}
